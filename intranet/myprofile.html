@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My profile</title>
+</head>
+<body>
+    <section>
+        <h1>Intranet Medica</h1>
+        <nav id="main-nav-buttons">
+            <button id="aboutme">About me</button>
+            <button id="myprofile">My profile</button>
+            <button id="mytreatments">My treatments</button>
+            <button id="logout">Logout</button>
+        </nav>
+        <hr style="width: 80%; margin: 1em 0;">
+        <h2>My profile</h2>
+
+        <form id="profileForm">
+            <label>Nombre</label>
+            <input type="text" id="profileName" required>
+            
+            <label>Mail</label>
+            <input type="email" id="profileEmail" required readonly title="El email no puede ser modificado.">
+            
+            <label>Contraseña</label>
+            <input type="password" id="profilePassword" required>
+            
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="profileBornDate" required>
+            
+            <label>Grupo sanguíneo</label>
+            <select id="profileGrupSang" required></select>
+            
+            <input type="submit" value="Guardar Cambios">
+        </form>
+        
+    </section>
+    <script src="js/myprofile.js"></script>
+</body>
+</html>

@@ -16,26 +16,27 @@
             <button id="mytreatments">My treatments</button>
             <button id="logout">Logout</button>
         </nav>
-        <hr style="width: 80%; margin: 1em 0;">    
+        <hr style="width: 80%; margin: 1em 0;">  
+
         <div class="container mt-4">
     <h1 class="display-4 text-center">
       <i class="fas fa-book-open text-primary"></i> My trataments</h1>
-      <form id="book-form">
+      <form id="treatment-form">
         <div class="form-group">
-          <label for="idTr">idTr</label>
+          <label for="idtr">idTr</label>
           <input type="text" id="idTr" class="form-control">
         </div>
         <div class="form-group">
-          <label for="idPac">idPac</label>
+          <label for="idpac">idPac</label>
           <input type="text" id="idPac" class="form-control">
         </div>
         <div class ="form-group">
-            <label for="dateTr">Date</label>
-            <input type="date" id="dateTr" class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control">
         </div>
         <div class="form-group">
-          <label for="name">name</label>
-          <input type="text" id="name" class="form-control">
+          <label for="date">Date</label>
+          <input type="date" id="date" class="form-control">
         </div>
 
         <input type="submit" value="Add treatment" class="btn btn-primary btn-block">
@@ -43,16 +44,17 @@
       <table class="table table-striped mt-5">
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>ISBN#</th>
+            <th>idTr</th>
+            <th>idPac</th>
+            <th>Name</th>
+            <th>Date</th>
             <th></th>
           </tr>
         </thead>
-        <tbody id="book-list"></tbody>
+        <tbody id="treatment-list"></tbody>
       </table>
   </div> 
     </section>
-    <script src="js/index.js"></script>
+    <script src="js/mytreatments.js"></script>
 </body>
 </html>

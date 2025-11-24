@@ -3,6 +3,7 @@ if(!user){
     window.location.href = 'login.html'
 }
 
+document.querySelector('#home').addEventListener('click',() => {window.location.href = 'index.html'});
 const logout = document.querySelector('#logout')
 const aboutme = document.querySelector('#aboutme')
 const myprofile = document.querySelector('#myprofile')

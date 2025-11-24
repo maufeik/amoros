@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>My treatments</title>
 </head>
 <body>
     <section>
         <h1>Intranet Medica</h1>
         <nav id="main-nav-buttons">
+            <button id="home">Home</button>
             <button id="aboutme">About me</button>
             <button id="myprofile">My profile</button>
             <button id="mytreatments">My treatments</button>
@@ -54,6 +57,13 @@
         <tbody id="treatment-list"></tbody>
       </table>
   </div> 
+
+  <div id="footer-placeholder"></div>
+            <script>
+                $(function(){
+                    $("#footer-placeholder").load("footer.html");
+                });
+            </script>
     </section>
     <script src="js/mytreatments.js"></script>
 </body>

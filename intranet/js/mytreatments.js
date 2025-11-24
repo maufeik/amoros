@@ -6,6 +6,7 @@ class Treatment{
         this.date=date;           
     }
 }
+document.querySelector('#home').addEventListener('click',() => {window.location.href = 'index.html'});
 document.querySelector('#aboutme').addEventListener('click', () => { window.location.href = 'aboutme.html'; });
 document.querySelector('#myprofile').addEventListener('click', () => { window.location.href = 'myprofile.html'; });
 document.querySelector('#mytreatments').addEventListener('click', () => { window.location.href = 'mytreatments.html'; });

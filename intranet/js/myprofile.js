@@ -8,7 +8,7 @@ const user = JSON.parse(localStorage.getItem('login_success')) || false;
 if (!user) {
     window.location.href = 'login.html';
 }
-
+document.querySelector('#home').addEventListener('click',() => {window.location.href = 'index.html'});
 document.querySelector('#aboutme').addEventListener('click', () => { window.location.href = 'aboutme.html'; });
 document.querySelector('#myprofile').addEventListener('click', () => { window.location.href = 'myprofile.html'; });
 document.querySelector('#mytreatments').addEventListener('click', () => { window.location.href = 'mytreatments.html'; });

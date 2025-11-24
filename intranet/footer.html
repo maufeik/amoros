@@ -1,4 +1,9 @@
-
+<script>
+  const user = JSON.parse(localStorage.getItem('login_success')) || false
+  if(!user){
+    window.location.href = 'login.html'
+}
+</script>
 
     <footer>
       <p>&copy; 2025 El Teu Projecte. CC-BY-SA.</p>

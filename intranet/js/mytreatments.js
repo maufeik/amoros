@@ -1,3 +1,8 @@
+const user = JSON.parse(localStorage.getItem('login_success')) || false
+if(!user){
+    window.location.href = 'login.html'
+}
+
 class Treatment{
     constructor(idTr, idPac, name, date){
         this.idTr=idTr;

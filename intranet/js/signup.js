@@ -1,3 +1,8 @@
+const user = JSON.parse(localStorage.getItem('login_success')) || false
+if(user){
+    window.location.href = 'login.html'
+}
+
 const gruposSanguineos = [
     "A+",
     "A-",
@@ -32,6 +37,11 @@ crearOpcionesGrupoSanguineo();
 const signupForm = document.querySelector('#signupForm')
 signupForm.addEventListener('submit', (e)=>{
     e.preventDefault()
+
+    const acceptPrivacy = document.querySelector('#accept-privacy').checked
+    if (!acceptPrivacy) {
+        return alert('Debes aceptar la Política de Privacidad')
+    }
 
     const name = document.querySelector('#name').value
     const email = document.querySelector('#email').value

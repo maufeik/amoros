@@ -1,3 +1,8 @@
+const user = JSON.parse(localStorage.getItem('login_success')) || false
+if(user){
+    window.location.href = 'index.html'
+}
+
 const loginForm = document.querySelector('#loginForm')
 loginForm.addEventListener('submit', (e)=>{
     e.preventDefault()
